@@ -1,8 +1,9 @@
-import express from 'express';
+simport express from 'express';
 import { getRandomDish, getRandomDishByCategory } from '../controllers/mealController.js';
 
 const router = express.Router();
 
-router.get('/', getRandomDish);
-router.get('/:category', getRandomDishByCategory);
+router.get('/meals', getRandomDish);
+router.get('/meals/:category', getRandomDishByCategory);
+
 export default router;
