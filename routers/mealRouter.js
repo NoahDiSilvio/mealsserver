@@ -3,8 +3,9 @@ import { getRandomDish, getRandomDishByCategory } from '../controllers/mealContr
 
 const router = express.Router();
 
-router.get('/meals', getRandomDish);
-router.get('/meals/:category', getRandomDishByCategory);
+router.get('/', getRandomDish);
+router.get('/:category', getRandomDishByCategory);
 
 export default router;
+
 
